@@ -45,8 +45,13 @@ a:active {
   right: 0;
   left: 0;
 }
+.section {
+  display: flex;
+  flex-direction: column;
+}
 .question {
   font-size: 20px;
+  text-align: center;
   width: 250px;
   height: auto;
   display: flex;
@@ -69,4 +74,27 @@ a:active {
   margin: auto;
   border: green solid thick;
   border-radius: 20px;
+}
+.bookmark2 {
+  height: 50px;
+}
+.bookmarkbutton {
+  position: absolute;
+  top: -20px;
+  right: 10px;
+  width: auto;
+  height: auto;
+  border: none;
+  background-color: transparent;
+}
+.footer {
+  background-color: grey;
+  display: flex;
+  height: 50px;
+  width: 100%;
+  position: fixed;
+  border: black solid;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
