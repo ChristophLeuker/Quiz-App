@@ -1,0 +1,20 @@
+.header {
+  font-size: 50px;
+  background-color: bisque;
+  border-bottom: solid green thick;
+  border-left: solid green thick;
+  border-right: solid green thick;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  height: 120px;
+  margin: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
