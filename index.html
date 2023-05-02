@@ -4,44 +4,93 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Quiz App</title>
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body class="body">
     <h1 class="header">Quiz App</h1>
-    <section class="section">
-      <div class="qbox">
-        <p class="question">What property flips the axes in Flexbox</p>
-        <a class="qbutton" href="questionurl" type="button"> Show answer</a>
-        <button type="button" class="bookmarkbutton">
+    <main>
+      <section class="secion">
+        <section class="qbox">
+          <p class="question">What property flips the axes in Flexbox</p>
+          <a class="qbutton" href="questionurl" type="button"> Show answer</a>
+          <button
+            type="button"
+            class="bookmarkbutton"
+            aria-label="bookmarkbutton"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="40"
+              height="40"
+              fill="currentColor"
+              class="bi bi-bookmark"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"
+              />
+            </svg>
+            <!-- img
+              class="bookmark2"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/OOjs_UI_icon_bookmark.svg/1200px-OOjs_UI_icon_bookmark.svg.png"
+              alt="bookmark"
+            /> -->
+          </button>
+          <ul class="tags">
+            <li class="htmltag">#Html</li>
+            <li class="htmltag">#flexbox</li>
+            <li class="htmltag">#css</li>
+          </ul>
+        </section>
+        <section class="qbox2">
+          <p class="question">Hier könnte ihre Frage stehen</p>
+          <a class="qbutton" href="questionurl" type="button"> Show answer</a>
+          <button
+            type="button"
+            class="bookmarkbutton"
+            aria-label="bookmarkbutton"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="40"
+              height="40"
+              fill="currentColor"
+              class="bi bi-bookmark"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"
+              />
+            </svg>
+          </button>
+          <ul class="tags">
+            <li class="htmltag">#Html</li>
+            <li class="htmltag">#flexbox</li>
+            <li class="htmltag">#css</li>
+          </ul>
+        </section>
+      </section>
+      <footer class="footer">
+        <a class="footer2" href="./index.html"
+          ><img
+            class="homebutton marked"
+            src="https://cdn-icons-png.flaticon.com/512/15/15766.png"
+            alt="Homebutton"
+        /></a>
+        <a class="footer2" href="./bookmarks.html">
           <img
-            class="bookmark2"
+            class="bookmarknav"
             src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/OOjs_UI_icon_bookmark.svg/1200px-OOjs_UI_icon_bookmark.svg.png"
-            alt="bookmark"
-          />
-        </button>
-      </div>
-      <div class="qbox2">b</div>
-    </section>
-    <footer class="footer">
-      <a class="footer2" href="./index.html"
-        ><img
-          class="homebutton marked"
-          src="https://cdn-icons-png.flaticon.com/512/15/15766.png"
-          alt="Homebutton"
-      /></a>
-      <a class="footer2" href="./bookmarks.html">
-        <img
-          class="bookmarknav"
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/OOjs_UI_icon_bookmark.svg/1200px-OOjs_UI_icon_bookmark.svg.png"
-          alt="bookmarkbutton"
-      /></a>
-      <a href="./profile.html">
-        <img
-          class="profile"
-          src="https://cdn.onlinewebfonts.com/svg/img_569204.png"
-          alt="profilebutton"
-      /></a>
-    </footer>
+            alt="bookmarkbutton"
+        /></a>
+        <a href="./profile.html">
+          <img
+            class="profile"
+            src="https://cdn.onlinewebfonts.com/svg/img_569204.png"
+            alt="profilebutton"
+        /></a>
+      </footer>
+    </main>
   </body>
 </html>
