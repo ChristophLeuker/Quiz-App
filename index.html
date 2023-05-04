@@ -6,46 +6,86 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz App</title>
     <link rel="stylesheet" href="./styles.css" />
+    <script src="./index.js"></script>
   </head>
   <body class="body">
     <h1 class="header">Quiz App</h1>
     <main>
       <!-- Quizkarte -->
-      <section class="section">
-        <section class="qbox">
-          <p class="question">What property flips the axes in Flexbox</p>
-          <a class="qbutton" href="questionurl" type="button"> Show answer</a>
+      <section class="qcard__section">
+        <section class="qcard">
+          <p class="qcard__question">What property flips the axes in Flexbox</p>
+          <a class="qcard__answerbutton" href="questionurl" type="button">
+            Show answer</a
+          >
+          <p class="qcard__answer">flex-direction</p>
+          <!-- <button
+            class="bookmark__button buttontest"
+            type="button"
+            data-js="bookmarkbutton"
+          > -->
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="40"
+            height="40"
+            fill="currentColor"
+            class="bi bi-bookmark bookmark__button-svg"
+            data-js="bookmarkjs"
+            viewBox="0 0 16 16"
+            onclick="bm()"
+            id="testbm"
+          >
+            <path
+              d="M2 2v13.5a.5.5 0 0 0 .74.439L8 13.069l5.26 2.87A.5.5 0 0 0 14 15.5V2a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2z"
+            />
+          </svg>
+          <!-- </button> -->
+
+          <ul class="qcard__tags">
+            <li class="qcard__tags--list">#Html</li>
+            <li class="qcard__tags--list">#flexbox</li>
+            <li class="qcard__tags--list">#css</li>
+          </ul>
+        </section>
+        <section class="qcard">
+          <p class="qcard__question">Hier könnte ihre Frage stehen</p>
+          <a class="qcard__answerbutton" href="questionurl" type="button">
+            Show answer</a
+          >
+          <p class="qcard__answer">antwort</p>
 
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="40"
             height="40"
             fill="currentColor"
-            class="bi bi-bookmark bookmarkbutton"
+            class="bi bi-bookmark bookmark__button-svg bookmark__button--active"
             viewBox="0 0 16 16"
-            onclick="alert('Platzhalter')"
           >
             <path
-              d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"
+              d="M2 2v13.5a.5.5 0 0 0 .74.439L8 13.069l5.26 2.87A.5.5 0 0 0 14 15.5V2a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2z"
             />
           </svg>
 
-          <ul class="tags">
-            <li class="htmltag">#Html</li>
-            <li class="htmltag">#flexbox</li>
-            <li class="htmltag">#css</li>
+          <ul class="qcard__tags">
+            <li class="qcard__tags--list">#Html</li>
+            <li class="qcard__tags--list">#flexbox</li>
+            <li class="qcard__tags--list">#css</li>
           </ul>
         </section>
-        <section class="qbox">
-          <p class="question">Hier könnte ihre Frage stehen</p>
-          <a class="qbutton" href="questionurl" type="button"> Show answer</a>
+        <section class="qcard">
+          <p class="qcard__question">Frage 3</p>
+          <a class="qcard__answerbutton" href="questionurl" type="button">
+            Show answer</a
+          >
+          <p class="qcard__answer">antwort</p>
 
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="40"
             height="40"
             fill="currentColor"
-            class="bi bi-bookmark bookmarkbutton"
+            class="bi bi-bookmark bookmark__button-svg"
             viewBox="0 0 16 16"
             onclick="alert('Platzhalter')"
           >
@@ -54,58 +94,37 @@
             />
           </svg>
 
-          <ul class="tags">
-            <li class="htmltag">#Html</li>
-            <li class="htmltag">#flexbox</li>
-            <li class="htmltag">#css</li>
+          <ul class="qcard__tags">
+            <li class="qcard__tags--list">#Html</li>
+            <li class="qcard__tags--list">#flexbox</li>
+            <li class="qcard__tags--list">#css</li>
           </ul>
         </section>
-        <section class="qbox">
-          <p class="question">Frage 3</p>
-          <a class="qbutton" href="questionurl" type="button"> Show answer</a>
+        <section class="qcard">
+          <p class="qcard__question">Frage 4</p>
+          <a class="qcard__answerbutton" href="questionurl" type="button">
+            Show answer</a
+          >
+          <p class="qcard__answer">antwort</p>
 
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="40"
             height="40"
             fill="currentColor"
-            class="bi bi-bookmark bookmarkbutton"
+            class="bi bi-bookmark bookmark__button-svg"
             viewBox="0 0 16 16"
             onclick="alert('Platzhalter')"
           >
             <path
-              d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"
+              d="M2 2v13.5a.5.5 0 0 0 .74.439L8 13.069l5.26 2.87A.5.5 0 0 0 14 15.5V2a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2z"
             />
           </svg>
 
-          <ul class="tags">
-            <li class="htmltag">#Html</li>
-            <li class="htmltag">#flexbox</li>
-            <li class="htmltag">#css</li>
-          </ul>
-        </section>
-        <section class="qbox">
-          <p class="question">Frage 4</p>
-          <a class="qbutton" href="questionurl" type="button"> Show answer</a>
-
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="40"
-            height="40"
-            fill="currentColor"
-            class="bi bi-bookmark bookmarkbutton"
-            viewBox="0 0 16 16"
-            onclick="alert('Platzhalter')"
-          >
-            <path
-              d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"
-            />
-          </svg>
-
-          <ul class="tags">
-            <li class="htmltag">#Html</li>
-            <li class="htmltag">#flexbox</li>
-            <li class="htmltag">#css</li>
+          <ul class="qcard__tags">
+            <li class="qcard__tags--list">#Html</li>
+            <li class="qcard__tags--list">#flexbox</li>
+            <li class="qcard__tags--list">#css</li>
           </ul>
         </section>
       </section>
@@ -118,7 +137,7 @@
           width="40"
           height="40"
           fill="currentColor"
-          class="bi bi-house-fill marked"
+          class="bi bi-house-fill footer__button--marked"
           viewBox="0 0 16 16"
         >
           <path

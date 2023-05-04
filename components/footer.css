@@ -1,0 +1,16 @@
+.footer {
+  background-color: grey;
+  display: flex;
+  justify-content: space-around;
+  height: 50px;
+  width: 100%;
+  position: fixed;
+  border: black solid;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.footer__button--marked {
+  background-color: rgb(239, 196, 143);
+}

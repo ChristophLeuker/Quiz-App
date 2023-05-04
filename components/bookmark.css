@@ -1,0 +1,22 @@
+.bookmark__button-svg {
+  position: absolute;
+  top: -15px;
+  right: 10px;
+  width: auto;
+  height: auto;
+  border: none;
+  background-color: transparent;
+  fill: rgba(128, 128, 128, 0.391);
+}
+
+.bookmark__button--active {
+  fill: black;
+}
+.buttontest {
+  /* border: black solid 2px; */
+  text-decoration: none;
+  background-color: transparent;
+  /* border: none; */
+  height: 0px;
+  width: 0px;
+}
