@@ -8,16 +8,27 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <!-- <h1 class="header">Quiz App</h1> -->
+    <h1 class="header">Quiz App</h1>
+    <!-- profilecard -->
     <main class="profile__container">
       <img src="https://i2.wp.com/inesschaefer.com/wp-content/uploads/2019/01/xing1.jpg?resize=730%2C642&ssl=1" class="profile__pic" alt="profilpicture"></img>
       <h2 class="profile__name">John Doe</h2>
-      <div class="profile__about-me">aboutme</div>
+      <div class="profile__about-me"><h2 class="profile__about-me--header">Aboutme</h2>
+        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, </div>
       <div class="profile__counter">counters</div>
-      <div class="profile__settings">settings</div>
-      <button type="toggle" class="profile__togglebutton">buttondarkmode</button>
+      <p class="profile__settings">Settings
+<p class="profile__settings profile__settings--darkmode">Darkmode on</p>
+      </p>
+      <div class="onoffswitch profile__togglebutton">
+        <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" tabindex="0">
+        <label class="onoffswitch-label" for="myonoffswitch">
+            <span class="onoffswitch-inner"></span>
+            <span class="onoffswitch-switch"></span>
+        </label>
+    </div>
     </main>
-    <!-- <footer class="footer">
+    <!-- footer -->
+    <footer class="footer">
       <a class="footer2" href="./index.html">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -67,6 +78,6 @@
           />
         </svg>
       </a>
-    </footer> -->
+    </footer>
   </body>
 </html>
