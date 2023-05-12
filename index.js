@@ -10,7 +10,7 @@ bookmarkButton.addEventListener("click", () => {
 showAnswerButton.addEventListener("click", () => {
   answerShow.classList.toggle("qcard__answer__show");
   /* showAnswerButton.textContent = "Hide answer"; */
-  const test = showAnswerButton.textContent;
+  const test = showAnswerButton.innerText;
   if (test === "Show answer") {
     showAnswerButton.textContent = "Hide answer";
   } else {
