@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<body lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./styles.css" />
     <script src="./createquestion.js" defer></script>
   </head>
-  <body class="body">
+  <body class="bodyindex">
     <h1 class="header">Quiz App</h1>
     <main class="form__main">
       <form data-js="createform">
@@ -19,6 +19,7 @@
           name="yourQuestion"
           id="yourquest"
           class="create-question__question"
+          data-js="yourQuestion"
         ></textarea>
         <label class="create-question__answer">Your answer:</label>
         <textarea
@@ -34,13 +35,13 @@
           id="yourtags"
           class="create-question__tags"
         />
-
+        <p class="create-question__question--letters" data-js="questionleftletters">noch xxx Wörter</p>
         <button type="submit" class="createbutton" data-js="createbutton">
           Create
         </button>
       </form>
     </main>
-  </body>
+  
   <footer class="footer">
     <a class="footer2" href="./index.html">
       <svg
@@ -109,4 +110,5 @@
       </svg>
     </a>
   </footer>
+</body>
 </html>

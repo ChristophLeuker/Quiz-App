@@ -24,6 +24,13 @@ form {
   width: 80%;
   resize: none;
 }
+.create-question__question--letters {
+  display: flex;
+  position: relative;
+  top: -270px;
+  right: -140px;
+  font-size: 10px;
+}
 .create-question__answer {
   display: flex;
   position: relative;

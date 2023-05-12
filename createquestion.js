@@ -1,5 +1,18 @@
 const form = document.querySelector('[data-js="createform"]');
 
+const questionInput = document.querySelector('[data-js="yourQuestion"]');
+const questionLeftLetters = document.querySelector(
+  '[data-js="questionleftletters"]'
+);
+
+questionInput.addEventListener("input", () => {
+  /* const formData = new FormData(event.target);
+  const data = Object.fromEntries(formData); */
+  const questionLength = questionInput.value.length;
+  questionLeftLetters.textContent =
+    "Noch " + (250 - questionLength) + " Wörter";
+});
+
 form.addEventListener("submit", (event) => {
   event.preventDefault();
   const formData = new FormData(event.target);
@@ -11,8 +24,7 @@ form.addEventListener("submit", (event) => {
   const showAnswerButton = document.createElement("button");
   const newAnswerText = document.createElement("p");
   const newBookmarkbutton = document.createElement("button");
-  /* const bookmarkSvg = document.createElement("svg");
-  const bookmarkPath = document.createElement("path"); */
+
   const tagsListUl = document.createElement("ul");
   const tagsListLi = document.createElement("li");
 
@@ -21,15 +33,15 @@ form.addEventListener("submit", (event) => {
   showAnswerButton.classList.add("qcard__answerbutton");
   newAnswerText.classList.add("qcard__answer");
   newBookmarkbutton.classList.add("buttontest");
-  /* bookmarkSvg.classList.add("bookmark__button-svg"); */
+
   tagsListUl.classList.add("qcard__tags");
   tagsListLi.classList.add("qcard__tags--list");
 
   newQuestionText.textContent = data.yourQuestion;
   showAnswerButton.textContent = "Show answer";
-  showAnswerButton.setAttribute = ("type", "button");
+  showAnswerButton.setAttribute("type", "button");
   newAnswerText.textContent = data.yourAnswer;
-  newBookmarkbutton.setAttribute = ("type", "button");
+  newBookmarkbutton.setAttribute("type", "button");
   tagsListLi.textContent = data.yourtags;
 
   newBookmarkbutton.innerHTML = `
