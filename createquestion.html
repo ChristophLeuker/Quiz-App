@@ -6,23 +6,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz App</title>
     <link rel="stylesheet" href="./styles.css" />
-    <script src="./index.js" defer></script>
+    <script src="./createquestion.js" defer></script>
   </head>
   <body class="body">
     <h1 class="header">Quiz App</h1>
-    <main>
-      <form>
-        <label>Your Question</label>
+    <main class="form__main">
+      <form data-js="createform">
+        <label class="create-question__question">Your question:</label>
+        <textarea
+          rows="7"
+          type="text"
+          name="yourquestion"
+          id="yourquest"
+          class="create-question__question"
+        ></textarea>
+        <label class="create-question__answer">Your answer:</label>
+        <textarea
+          rows="7"
+          name="youranswer"
+          id="youranswer"
+          class="create-question__answer"
+        ></textarea>
+        <label class="create-question__tags">Tag:</label>
+        <input
+          type="text"
+          name="yourtags"
+          id="yourtags"
+          class="create-question__tags"
+        />
+
+        <button type="submit" class="createbutton" data-js="createbutton">
+          Create
+        </button>
       </form>
     </main>
     <footer class="footer">
       <a class="footer2" href="./index.html">
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          width="150"
+          width="100"
           height="40"
           fill="currentColor"
-          class="bi bi-house-fill footer__button--marked"
+          class="bi bi-house-fill"
           viewBox="0 0 16 16"
         >
           <path
@@ -38,7 +63,7 @@
       <a class="footer2" href="./bookmarks.html">
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          width="150"
+          width="100"
           height="40"
           fill="currentColor"
           class="bi bi-bookmark"
@@ -49,10 +74,27 @@
           />
         </svg>
       </a>
+      <a class="footer2" href="./createquestin.html">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="100"
+          height="40"
+          fill="currentColor"
+          class="bi bi-chat-left-dots footer__button--marked"
+          viewBox="0 0 16 16"
+        >
+          <path
+            d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"
+          />
+          <path
+            d="M5 6a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"
+          />
+        </svg>
+      </a>
       <a href="./profile.html">
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          width="150"
+          width="100"
           height="40"
           fill="currentColor"
           class="bi bi-person-circle"
