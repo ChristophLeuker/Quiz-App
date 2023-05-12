@@ -15,31 +15,31 @@
       <section class="qcard__section">
         <section class="qcard">
           <p class="qcard__question">What property flips the axes in Flexbox</p>
-          <a class="qcard__answerbutton" href="questionurl" type="button">
-            Show answer</a
-          >
-          <p class="qcard__answer">flex-direction</p>
-          <!-- <button
-            class="bookmark__button buttontest"
+          <button
+            class="qcard__answerbutton"
             type="button"
-            data-js="bookmarkbutton"
-          > -->
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="40"
-            height="40"
-            fill="currentColor"
-            class="bi bi-bookmark bookmark__button-svg"
-            data-js="bookmarkjs"
-            viewBox="0 0 16 16"
-            onclick="bm()"
-            id="testbm"
+            data-js="showAnswerButton"
           >
-            <path
-              d="M2 2v13.5a.5.5 0 0 0 .74.439L8 13.069l5.26 2.87A.5.5 0 0 0 14 15.5V2a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2z"
-            />
-          </svg>
-          <!-- </button> -->
+            Show answer
+          </button>
+          <p class="qcard__answer" data-js="answer">flex-direction</p>
+          <button class="buttontest" type="button" data-js="bookmarkbutton">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="40"
+              height="40"
+              fill="currentColor"
+              class="bi bi-bookmark bookmark__button-svg"
+              data-js="bookmarkjs"
+              viewBox="0 0 16 16"
+              onclick="bm()"
+              id="testbm"
+            >
+              <path
+                d="M2 2v13.5a.5.5 0 0 0 .74.439L8 13.069l5.26 2.87A.5.5 0 0 0 14 15.5V2a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2z"
+              />
+            </svg>
+          </button>
 
           <ul class="qcard__tags">
             <li class="qcard__tags--list">#Html</li>

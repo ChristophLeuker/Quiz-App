@@ -29,6 +29,10 @@
   border-radius: 20px;
   visibility: hidden;
 }
+.qcard__answer__show {
+  visibility: visible;
+}
+
 .qcard__section {
   display: flex;
   flex-direction: column;
