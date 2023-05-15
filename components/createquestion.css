@@ -27,7 +27,7 @@ form {
 .create-question__question--letters {
   display: flex;
   position: relative;
-  top: -270px;
+  top: -250px;
   right: -140px;
   font-size: 10px;
 }
@@ -36,6 +36,13 @@ form {
   position: relative;
   width: 80%;
   resize: none;
+}
+.create-question__answer--letters {
+  display: flex;
+  position: relative;
+  top: -160px;
+  right: -140px;
+  font-size: 10px;
 }
 .create-question__tags {
   display: flex;
