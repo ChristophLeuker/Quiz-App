@@ -6,8 +6,6 @@ const questionLeftLetters = document.querySelector(
 );
 
 questionInput.addEventListener("input", () => {
-  /* const formData = new FormData(event.target);
-  const data = Object.fromEntries(formData); */
   const questionLength = questionInput.value.length;
   questionLeftLetters.textContent =
     "Noch " + (250 - questionLength) + " Wörter";
