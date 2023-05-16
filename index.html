@@ -13,7 +13,7 @@
     <main>
       <!-- Quizkarte -->
       <section class="qcard__section">
-        <section class="qcard">
+        <section class="qcard" data-js="qcard">
           <p class="qcard__question">What property flips the axes in Flexbox</p>
           <button
             class="qcard__answerbutton"
@@ -46,80 +46,96 @@
           </ul>
         </section>
         <!--  Quizkarte ende -->
-        <section class="qcard">
+        <section class="qcard" data-js="qcard">
           <p class="qcard__question">Hier könnte ihre Frage stehen</p>
-          <a class="qcard__answerbutton" href="questionurl" type="button">
-            Show answer</a
+          <button
+            class="qcard__answerbutton"
+            type="button"
+            data-js="showAnswerButton"
           >
-          <p class="qcard__answer">antwort</p>
+            Show answer
+          </button>
 
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="40"
-            height="40"
-            fill="currentColor"
-            class="bi bi-bookmark bookmark__button-svg bookmark__button--active"
-            viewBox="0 0 16 16"
-          >
-            <path
-              d="M2 2v13.5a.5.5 0 0 0 .74.439L8 13.069l5.26 2.87A.5.5 0 0 0 14 15.5V2a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2z"
-            />
-          </svg>
-
+          <p class="qcard__answer" data-js="answer">antwort</p>
+          <button class="buttontest" type="button" data-js="bookmarkbutton">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="40"
+              height="40"
+              fill="currentColor"
+              class="bi bi-bookmark bookmark__button-svg"
+              viewBox="0 0 16 16"
+              data-js="bookmarkjs"
+            >
+              <path
+                d="M2 2v13.5a.5.5 0 0 0 .74.439L8 13.069l5.26 2.87A.5.5 0 0 0 14 15.5V2a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2z"
+              />
+            </svg>
+          </button>
           <ul class="qcard__tags">
             <li class="qcard__tags--list">#Html</li>
             <li class="qcard__tags--list">#flexbox</li>
             <li class="qcard__tags--list">#css</li>
           </ul>
         </section>
-        <section class="qcard">
+        <section class="qcard" data-js="qcard">
           <p class="qcard__question">Frage 3</p>
-          <a class="qcard__answerbutton" href="questionurl" type="button">
-            Show answer</a
+          <button
+            class="qcard__answerbutton"
+            type="button"
+            data-js="showAnswerButton"
           >
-          <p class="qcard__answer">antwort</p>
+            Show answer
+          </button>
 
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="40"
-            height="40"
-            fill="currentColor"
-            class="bi bi-bookmark bookmark__button-svg"
-            viewBox="0 0 16 16"
-            onclick="alert('Platzhalter')"
-          >
-            <path
-              d="M2 2v13.5a.5.5 0 0 0 .74.439L8 13.069l5.26 2.87A.5.5 0 0 0 14 15.5V2a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2z"
-            />
-          </svg>
-
+          <p class="qcard__answer" data-js="answer">antwort</p>
+          <button class="buttontest" type="button" data-js="bookmarkbutton">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="40"
+              height="40"
+              fill="currentColor"
+              class="bi bi-bookmark bookmark__button-svg"
+              viewBox="0 0 16 16"
+              data-js="bookmarkjs"
+            >
+              <path
+                d="M2 2v13.5a.5.5 0 0 0 .74.439L8 13.069l5.26 2.87A.5.5 0 0 0 14 15.5V2a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2z"
+              />
+            </svg>
+          </button>
           <ul class="qcard__tags">
             <li class="qcard__tags--list">#Html</li>
             <li class="qcard__tags--list">#flexbox</li>
             <li class="qcard__tags--list">#css</li>
           </ul>
         </section>
-        <section class="qcard">
+        <section class="qcard" data-js="qcard">
           <p class="qcard__question">Frage 4</p>
-          <a class="qcard__answerbutton" href="questionurl" type="button">
-            Show answer</a
+          <button
+            class="qcard__answerbutton"
+            type="button"
+            data-js="showAnswerButton"
           >
-          <p class="qcard__answer">antwort</p>
+            Show answer
+          </button>
 
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="40"
-            height="40"
-            fill="currentColor"
-            class="bi bi-bookmark bookmark__button-svg"
-            viewBox="0 0 16 16"
-            onclick="alert('Platzhalter')"
-          >
-            <path
-              d="M2 2v13.5a.5.5 0 0 0 .74.439L8 13.069l5.26 2.87A.5.5 0 0 0 14 15.5V2a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2z"
-            />
-          </svg>
-
+          <p class="qcard__answer" data-js="answer">antwort</p>
+          <button class="buttontest" type="button" data-js="bookmarkbutton">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="40"
+              height="40"
+              fill="currentColor"
+              class="bi bi-bookmark bookmark__button-svg"
+              viewBox="0 0 16 16"
+              data-js="bookmarkjs"
+            >
+              <path
+                d="M2 2v13.5a.5.5 0 0 0 .74.439L8 13.069l5.26 2.87A.5.5 0 0 0 14 15.5V2a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2z"
+              />
+            </svg>
+          </button>
           <ul class="qcard__tags">
             <li class="qcard__tags--list">#Html</li>
             <li class="qcard__tags--list">#flexbox</li>
