@@ -4,11 +4,19 @@ const questionInput = document.querySelector('[data-js="yourQuestion"]');
 const questionLeftLetters = document.querySelector(
   '[data-js="questionleftletters"]'
 );
+const answerInput = document.querySelector('[data-js="yourAnswer"]');
+const answerLeftLetters = document.querySelector(
+  '[data-js="answerleftletters"]'
+);
 
 questionInput.addEventListener("input", () => {
   const questionLength = questionInput.value.length;
   questionLeftLetters.textContent =
     "Noch " + (250 - questionLength) + " Wörter";
+});
+answerInput.addEventListener("input", () => {
+  const answerLength = answerInput.value.length;
+  answerLeftLetters.textContent = "Noch " + (250 - answerLength) + " Wörter";
 });
 
 form.addEventListener("submit", (event) => {
@@ -64,8 +72,6 @@ form.addEventListener("submit", (event) => {
   newQuestion.append(showAnswerButton);
   newQuestion.append(newAnswerText);
   newQuestion.append(newBookmarkbutton);
-  /* newBookmarkbutton.append(bookmarkSvg);
-  newBookmarkbutton.append(bookmarkPath); */
   newQuestion.append(tagsListUl);
   tagsListUl.append(tagsListLi);
 });
